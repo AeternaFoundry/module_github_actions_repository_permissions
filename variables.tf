@@ -30,7 +30,7 @@ EOT
         v.allowed_actions == null || (contains(["all", "local_only", "selected"], v.allowed_actions))
       )
     ])
-    error_message = "must be one of: all, local_only, selected"
+    error_message = "must be one of: \"all\", \"local_only\", \"selected\""
   }
   validation {
     condition = alltrue([
